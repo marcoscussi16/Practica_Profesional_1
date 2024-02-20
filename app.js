@@ -5,7 +5,7 @@ const app= express();
 app.use (express.static("assets"));
 
  app.listen(5000,() => {
-    console.log ("Servidor corriendo en el puerto 5000");
+    console.log ("Servidor corriendoo en el puerto 5000");
  } );
  
 
