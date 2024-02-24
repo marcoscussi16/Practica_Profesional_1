@@ -1,10 +1,12 @@
-import './App.css'
-import Acceso from "./components/Acceso"
-import Menu from "./components/Menu"
-import Preventa from "./components/Preventa"
-import Aspirantes from "./components/Aspirantes"
-import Profesiones from './components/Profesiones'
+//COMPONENTES
+import Inicio from './pages/Inicio'
+import Aspirantes from './pages/Aspirantes'
+import Profesiones from './pages/Profesiones'
 
+//RUTAS
+import { Routes, Route, Link } from 'react-router-dom'
+
+//HOJAS DE ESTILOS
 
 import "../public/css/normalize.min.css"
 import "../public/css/font-awesome.min.css"
@@ -14,15 +16,22 @@ import "./App.css"
 
 
 function App() {
-  return (
+  return (  
   <div className='App'>
-    <Acceso/>
-    <Menu/>
-    <Preventa/>
-    <Aspirantes/>
-    <Profesiones/>
+  
+    <Routes>
+          <Route exact path="/" Component={Inicio}/>
+    </Routes>
+    <Routes>
+          <Route path="/aspirantes" Component={Aspirantes}/>
+    </Routes>
+    <Routes>
+          <Route path="/profesiones" Component={Profesiones}/>
+    </Routes>
   </div>
   )
 }
-
 export default App
+/*
+
+  */

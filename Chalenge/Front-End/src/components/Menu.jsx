@@ -1,8 +1,15 @@
+import { Routes, Route, Link } from 'react-router-dom'
+import PagAspirante from '../pages/Aspirantes'
+
+
+
+
 function Menu(){
     return(
         <>
 		<div id="dashboard">
 				<header className="menu-wrap">
+					<Link to="/">
 					<figure className="user">
 						<div className="user-avatar">
 						<img src="../../public/img/logo-dh.png" alt="" />
@@ -11,6 +18,7 @@ function Menu(){
 							Digital House
 						</figcaption>
 					</figure>
+					</Link>
 					<nav>
 						<section className="menu">
 							<h3>Opciones</h3>
@@ -22,16 +30,16 @@ function Menu(){
 									</a>
 								</li>
 								<li>
-									<a href="#">
+									<Link to="/aspirantes">
 										<i className="bi bi-person iconoAspirante"></i>
 										- Aspirantes
-									</a>
+									</Link>
 								</li>
 								<li>
-									<a href="#">
+									<Link to="/profesiones">
 										<i className="bi bi-list-check iconoProfesiones"></i>
 										- Profesiones
-									</a>
+									</Link>
 								</li>
 								<li>
 									<a href="#">
