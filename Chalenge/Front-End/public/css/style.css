@@ -4,17 +4,6 @@
 img{
   width: 100%;
 }
-html,
-body {
-  color: #99a0b0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  background: #f5f5fa;
-  font-size: 16px;
-  line-height: 120%;
-  font-family: Open Sans, Helvetica, sans-serif;
-}
 .dashboard {
   display: grid;
   width: 100%;
@@ -23,6 +12,14 @@ body {
   grid-template-columns: 300px auto;
   grid-template-rows: 80px auto;
   grid-template-areas: 'menu search' 'menu content';
+  color: #99a0b0;
+  width: 100%;
+  height: 100%;
+  background: #f5f5fa;
+  font-size: 16px;
+  overflow: hidden;
+  line-height: 120%;
+  font-family: Open Sans, Helvetica, sans-serif;
 }
 .search-wrap {
   grid-area: search;
