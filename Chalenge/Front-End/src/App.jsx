@@ -1,11 +1,16 @@
 import './App.css'
-import Card from "./components/Card"
+import Acceso from "./components/Acceso"
+import "../public/css/normalize.min.css"
+import "../public/css/font-awesome.min.css"
+import "../public/css/bootstrap.min.css"
+import "../public/css/style.css"
+
 
 function App() {
   return (
   <div className='App'>
-    <h1>Holaaasfasfaaa</h1>
-    <Card/>
+    <h1>SOY LA APP</h1>
+    <Acceso/>
   </div>
   )
 }
