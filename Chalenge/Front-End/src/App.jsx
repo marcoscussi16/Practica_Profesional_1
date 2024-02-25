@@ -3,8 +3,9 @@ import Inicio from './pages/Inicio'
 import Aspirantes from './pages/Aspirantes'
 import Profesiones from './pages/Profesiones'
 
-//RUTAS
+//
 import { Routes, Route, Link } from 'react-router-dom'
+import React, { Component } from 'react'
 
 //HOJAS DE ESTILOS
 
@@ -15,7 +16,8 @@ import "../public/css/style.css"
 import "./App.css"
 
 
-function App() {
+class App extends Component {
+  render (){
   return (  
   <div className='App'>
   
@@ -30,6 +32,7 @@ function App() {
     </Routes>
   </div>
   )
+}
 }
 export default App
 /*

@@ -4,7 +4,10 @@ const methodOverride= require("method-override")
 const app= express();
 const publicPath = path.resolve (__dirname, "./public");
 const session = require ("express-session");
+const cors = require ("cors")
 
+
+app.use(cors())
 
 const profesiones= require("./routers/profesiones.js")
 const aspirantes= require("./routers/aspirantes.js")
